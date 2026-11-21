@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Capture and Interfaces
+Name[tr]=Ağ Kayıtları ve Arayüzler
+Comment=Summarize a capture or inspect local interface information
+Comment[tr]=Ağ kaydını özetle veya yerel bağlantı bilgilerini incele
+Exec=kage-inceleme ag
+Icon=network-wired
+Terminal=false
+Categories=Network;X-KageNetwork;
+StartupNotify=true

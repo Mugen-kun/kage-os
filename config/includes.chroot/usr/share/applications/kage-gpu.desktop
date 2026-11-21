@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=GPU ve Sürücüler
+Comment=Grafik aygıtlarını incele ve uygulama için GPU seç
+Exec=kage-merkez --gpu
+Icon=video-display
+Categories=System;X-KageManagement;
+Keywords=GPU;Intel;NVIDIA;AMD;Sürücü;RTX;
+StartupNotify=true

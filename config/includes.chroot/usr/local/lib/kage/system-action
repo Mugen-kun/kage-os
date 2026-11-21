@@ -1,0 +1,109 @@
+#!/usr/bin/python3 -I
+"""Privileged, enumerated operations used by Kage Merkez."""
+
+import os
+from pathlib import Path
+import platform
+import subprocess
+import sys
+import tempfile
+
+sys.path.insert(0, "/usr/share/kage")
+from aygitlar import apply_power_profile, graphics_devices, live_session
+from kalicilik import format_persistence
+from sistem import boot_mode
+from sistem_kurtarma import active_device, create_system_point
+from toolbox import GROUPS, packages_to_install, upgrade_command
+
+
+NONFREE = Path("/etc/apt/sources.list.d/kage-nvidia.sources")
+NVIDIA_SOURCES = """Types: deb
+URIs: https://deb.debian.org/debian
+Suites: trixie trixie-updates
+Components: contrib non-free
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+Types: deb
+URIs: https://deb.debian.org/debian-security
+Suites: trixie-security
+Components: contrib non-free
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+"""
+
+
+def apt_command(arguments):
+    arguments = [*arguments]
+    arguments[1:1] = ["-o", "Dpkg::Options::=--force-confold"]
+    env = dict(os.environ, DEBIAN_FRONTEND="noninteractive", LC_ALL="C")
+    subprocess.run(arguments, env=env, check=True)
+
+
+def apt_install(packages):
+    apt_command(["/usr/bin/apt-get", "--assume-yes", "--no-remove", "--no-install-recommends", "install", *packages])
+
+
+def before_system_change():
+    if active_device():
+        print(f"Btrfs kurtarma noktası {create_system_point()}", flush=True)
+
+
+def nvidia_install():
+    if live_session():
+        raise ValueError("NVIDIA sürücüsü kurulumu kalıcı bir Kage kurulumu gerektirir.")
+    if not any(device.vendor == "NVIDIA" for device in graphics_devices()):
+        raise ValueError("NVIDIA GPU bulunamadı.")
+    if platform.freedesktop_os_release().get("VERSION_CODENAME") != "trixie":
+        raise ValueError("Bu sürücü işlemi Debian 13 tabanlı Kage içindir.")
+    before_system_change()
+    created_source = False
+    try:
+        if not NONFREE.exists():
+            with tempfile.NamedTemporaryFile(mode="w", dir=NONFREE.parent, encoding="ascii", delete=False) as stream:
+                temporary = Path(stream.name)
+                try:
+                    stream.write(NVIDIA_SOURCES)
+                    stream.flush()
+                    temporary.chmod(0o644)
+                    temporary.replace(NONFREE)
+                finally:
+                    temporary.unlink(missing_ok=True)
+            created_source = True
+        apt_command(["/usr/bin/apt-get", "-o", "APT::Update::Error-Mode=any", "update"])
+    except (OSError, subprocess.SubprocessError):
+        if created_source:
+            NONFREE.unlink(missing_ok=True)
+        raise
+    packages = ["nvidia-driver", f"linux-headers-{platform.release()}"]
+    if "Secure Boot açık" in boot_mode():
+        packages.append("mokutil")
+    apt_install(packages)
+
+
+def main(args):
+    if os.geteuid():
+        raise ValueError("Bu işlem yönetici yetkisi gerektirir.")
+    if args == ["upgrade"]:
+        before_system_change()
+        apt_command(upgrade_command())
+    elif args == ["nvidia"]:
+        nvidia_install()
+    elif args == ["point"]:
+        print(create_system_point())
+    elif len(args) == 2 and args[0] == "power":
+        apply_power_profile(args[1])
+    elif len(args) >= 2 and args[0] == "packages" and all(key in GROUPS for key in args[1:]):
+        before_system_change()
+        apt_install(packages_to_install(args[1:]))
+    elif len(args) == 4 and args[0] == "usb" and args[3] in {"plain", "luks"}:
+        secret = sys.stdin.buffer.read(1025) if args[3] == "luks" else None
+        format_persistence(args[1], args[2], secret)
+    else:
+        raise ValueError("Geçersiz sistem işlemi.")
+    return 0
+
+
+try:
+    raise SystemExit(main(sys.argv[1:]))
+except (OSError, ValueError, subprocess.SubprocessError) as error:
+    print(error, file=sys.stderr)
+    raise SystemExit(1) from error

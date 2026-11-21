@@ -1,0 +1,20 @@
+#!/bin/sh
+set -eu
+
+printf 'tr_TR.UTF-8 UTF-8\nen_US.UTF-8 UTF-8\n' > /etc/locale.gen
+locale-gen
+update-locale LANG=tr_TR.UTF-8
+
+# Show Kage in desktop system information while keeping Debian package compatibility.
+/usr/local/lib/kage/set-os-release
+chown -R 0:0 /usr/share/kage /usr/local/lib/kage
+chown 0:0 /usr/local/bin/kage-sistem-kurtar /usr/share/polkit-1/actions/org.kage.system-action.policy
+systemctl --root=/ disable nftables.service power-profiles-daemon.service
+/usr/local/lib/kage/configure-terminal
+/usr/local/lib/kage/index-toolbox
+sh -lc 'kage-terminal-kontrol'
+
+# Set the fallback wallpaper for all XFCE monitor connectors and workspaces.
+default=/usr/share/backgrounds/xfce/xfce-x.svg
+dpkg-divert --local --add --rename "$default"
+/usr/local/lib/kage/set-wallpaper

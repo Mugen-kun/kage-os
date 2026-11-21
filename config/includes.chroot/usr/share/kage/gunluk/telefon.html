@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kage Dosya Paylaşımı</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Dosya paylaşımı</h1>
+    <p id="time"></p>
+    <section id="downloads" hidden>
+      <h2>Bilgisayardan al</h2>
+      <ul id="files"></ul>
+    </section>
+    <section id="send" hidden>
+      <h2>Bilgisayara gönder</h2>
+      <label class="picker">
+        <input id="source" type="file" aria-label="Gönderilecek dosya">
+        <span>Dosya seç</span>
+      </label>
+      <p id="selected" hidden></p>
+      <button id="upload" type="button">Gönder</button>
+    </section>
+    <p id="status" role="status">Bağlantı açılıyor…</p>
+  </main>
+</body>
+</html>

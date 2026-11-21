@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Nmap Manual
+Name[tr]=Nmap Kılavuzu
+Exec=xfce4-terminal --execute man nmap
+Icon=help-browser
+Terminal=false
+Categories=Network;X-KageNetwork;

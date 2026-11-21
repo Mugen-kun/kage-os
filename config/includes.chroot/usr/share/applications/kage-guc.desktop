@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Güç Profilleri
+Comment=Pil tasarrufu, dengeli ve performans profilleri
+Exec=kage-merkez --guc
+Icon=battery
+Categories=System;X-KageManagement;
+Keywords=Pil;Güç;Performans;
+StartupNotify=true

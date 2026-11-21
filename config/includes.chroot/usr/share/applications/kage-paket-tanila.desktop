@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Paket Sorun Giderme
+Comment=Debian paket adayını, APT kilidini ve depo bağlantısını denetle
+Exec=kage-merkez --paket-tanila
+Icon=system-software-install
+Categories=System;X-KageManagement;
+Keywords=APT;Paket;Sorun giderme;DNS;Debian;
+StartupNotify=true

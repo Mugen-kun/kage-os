@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Kurtarma Noktaları
+Comment=Kişisel ayar noktalarını ve Btrfs sistem noktalarını yönet
+Exec=kage-merkez --kurtarma
+Icon=document-revert
+Categories=System;X-KageManagement;
+Keywords=Btrfs;Yedek;Kurtarma;
+StartupNotify=true

@@ -1,0 +1,14 @@
+#!/bin/sh
+set -eu
+release="$(cat /etc/kage-release)"
+
+for file in /usr/lib/os-release /etc/os-release; do
+    if [ -s "$file" ]; then
+        sed -i --follow-symlinks \
+            -e "s/^PRETTY_NAME=.*/PRETTY_NAME=\"$release (Debian 13)\"/" \
+            -e 's/^NAME=.*/NAME="Kage OS"/' \
+            -e '/^LOGO=/d' "$file"
+        printf '%s\n' 'LOGO=kage' >> "$file"
+        grep -Fxq "PRETTY_NAME=\"$release (Debian 13)\"" "$file"
+    fi
+done

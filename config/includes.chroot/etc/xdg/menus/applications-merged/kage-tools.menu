@@ -1,0 +1,29 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN" "http://www.freedesktop.org/standards/menu-spec/menu-1.0.dtd">
+<Menu>
+  <Name>Xfce</Name>
+  <Menu>
+    <Name>KageManagement</Name>
+    <Directory>kage-management.directory</Directory>
+    <Include><Category>X-KageManagement</Category></Include>
+  </Menu>
+  <Menu>
+    <Name>KageDaily</Name>
+    <Directory>kage-daily.directory</Directory>
+    <Include><Category>X-KageDaily</Category></Include>
+  </Menu>
+  <Menu>
+    <Name>KageNetwork</Name>
+    <Directory>kage-network.directory</Directory>
+    <Include>
+      <Category>X-KageNetwork</Category>
+      <Filename>org.wireshark.Wireshark.desktop</Filename>
+    </Include>
+  </Menu>
+  <Menu>
+    <Name>KageForensics</Name>
+    <Directory>kage-forensics.directory</Directory>
+    <Include>
+      <Category>X-KageForensics</Category>
+    </Include>
+  </Menu>
+</Menu>

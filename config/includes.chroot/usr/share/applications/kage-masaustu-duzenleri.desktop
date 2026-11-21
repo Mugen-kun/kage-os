@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Masaüstü Düzenleri
+Comment=Ders, sunum ve salon için çalışma düzenleri
+Exec=kage-merkez --masaustu-duzenleri
+Icon=preferences-desktop
+Categories=Utility;X-KageDaily;
+Keywords=Ders;Sunum;Salon;PDF;
+StartupNotify=true

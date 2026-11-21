@@ -1,0 +1,45 @@
+Kage İngilizce–Türkçe mini sözlük
+
+accessibility · erişilebilirlik · Bir uygulamanın farklı ihtiyaçlarla kullanılabilmesi.
+account · hesap · Oturum açmak için kullanılan kullanıcı kaydı.
+attachment · ek · İletiyle birlikte gönderilen dosya.
+backup · yedek · Daha sonra geri alınabilecek dosya kopyası.
+bookmark · yer imi · Tekrar açmak üzere kaydedilen sayfa veya konum.
+brightness · parlaklık · Ekranın yaydığı ışık düzeyi.
+browser · tarayıcı · Web sayfalarını açan uygulama.
+caption · altyazı · Görüntüye eşlik eden yazı.
+chapter · bölüm · Kitap veya kılavuzun ana parçalarından biri.
+clipboard · pano · Kopyalanan metin veya dosyanın geçici olarak tutulduğu yer.
+compress · sıkıştırmak · Dosyanın kapladığı alanı azaltmak.
+crop · kırpmak · Görüntünün dış bölümlerini kesmek.
+dictionary · sözlük · Sözcüklerin anlamını veya başka dildeki karşılığını veren kaynak.
+directory · dizin · Dosya ve klasörleri barındıran konum.
+document · belge · Metin ya da başka içerik barındıran dosya.
+download · indirmek · Uzak konumdaki dosyayı kendi cihazına almak.
+draft · taslak · Üzerinde çalışılan ilk sürüm.
+edit · düzenlemek · İçeriği veya ayarı değiştirmek.
+export · dışa aktarmak · İçeriği seçilen dosya biçiminde kaydetmek.
+folder · klasör · İlgili dosyaları bir yerde toplamak için kullanılan dizin.
+fullscreen · tam ekran · Pencerenin ekranın tamamını kapladığı görünüm.
+heading · başlık · Belgenin bir bölümünü tanıtan metin.
+import · içe aktarmak · Var olan dosyayı uygulamaya eklemek.
+library · kitaplık · Birlikte saklanan ve aranabilen belgeler.
+merge · birleştirmek · Birden çok şeyi tek parçada toplamak.
+notification · bildirim · Bir olay veya işlem hakkında çıkan kısa ileti.
+offline · çevrimdışı · Ağ bağlantısı bulunmadan kullanım.
+outline · taslak veya ana hatlar · Belgenin bölüm ve başlık listesi.
+playlist · oynatma listesi · Sıralanmış müzik veya video seçkisi.
+presentation · sunum · Ekranda veya yansıtıcıda gösterilen slaytlar.
+preview · önizleme · Dosyanın veya değişikliğin nasıl görüneceğini gösteren ekran.
+read-only · salt okunur · İçeriğin görüntülenebildiği erişim biçimi.
+recovery · kurtarma · Gerekli dosyaları yeniden erişilebilir hale getirme.
+resize · yeniden boyutlandırmak · Görüntünün enini ve boyunu değiştirmek.
+restore · geri yüklemek · Bir yedeği veya önceki durumu yeniden kullanmak.
+shortcut · kısayol · Bir komutu hızla açan tuş bileşimi veya simge.
+spreadsheet · hesap tablosu · Satır ve sütunlarla sayısal veri düzenleme belgesi.
+storage · depolama · Dosya ve uygulamaların saklandığı alan.
+thumbnail · küçük resim · Bir dosyanın içeriğini temsil eden küçük görüntü.
+transfer · aktarmak · Dosyayı bir cihazdan veya konumdan diğerine taşımak.
+upload · yüklemek · Yerel dosyayı uzak cihaza göndermek.
+wallpaper · duvar kâğıdı · Masaüstünün arka plan resmi.
+workspace · çalışma alanı · İlişkili pencerelerin bir arada kullandığı masaüstü.

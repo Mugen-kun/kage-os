@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Donanım Uyumluluğu
+Comment=Algılanan ağ, ses ve ekran donanımını ve sürücülerini göster
+Exec=kage-merkez --donanim
+Icon=computer
+Categories=System;
+Keywords=Donanım;Sürücü;Firmware;Wi-Fi;GPU;
+StartupNotify=true

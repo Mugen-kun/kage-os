@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+exec /usr/bin/apt-get -o Dir::Etc::sourcelist=/etc/apt/sources.list.d/kage-toolbox.sources \
+    -o Dir::Etc::sourceparts=- -o APT::Get::List-Cleanup=0 \
+    -o APT::Update::Error-Mode=any update

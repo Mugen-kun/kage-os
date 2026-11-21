@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Kage Örnek İncelemeler
+Comment=DNS paketleri, örnek sistem kaydı ve dosya özeti üzerinde çalış
+Exec=mousepad /usr/share/kage/ornekler/Ornek-Incelemeler.txt
+Icon=help-browser
+Categories=Education;X-KageForensics;
+Keywords=Çevrimdışı;Alıştırma;Wireshark;SHA-256;Günlük;
+StartupNotify=true

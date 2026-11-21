@@ -1,0 +1,6 @@
+[Unit]
+Description=Update the Kage desktop theme for the local time
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /usr/share/kage/masaustu.py

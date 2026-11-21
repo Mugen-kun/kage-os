@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Kage OS ilk açılış
+Exec=/usr/local/lib/kage/start-session
+Icon=kage
+OnlyShowIn=XFCE;
+StartupNotify=false
+Terminal=false

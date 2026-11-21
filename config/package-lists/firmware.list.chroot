@@ -1,0 +1,8 @@
+firmware-atheros
+firmware-iwlwifi
+firmware-realtek
+firmware-misc-nonfree
+firmware-amd-graphics
+firmware-intel-graphics
+firmware-mediatek
+wireless-regdb

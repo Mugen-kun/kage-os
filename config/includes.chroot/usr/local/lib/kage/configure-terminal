@@ -1,0 +1,8 @@
+#!/bin/sh
+set -eu
+line='. /usr/share/kage/komut-onerisi.sh'
+for file in /etc/bash.bashrc /etc/zsh/zshrc; do
+    if ! grep -Fxq "$line" "$file"; then
+        printf '\n%s\n' "$line" >> "$file"
+    fi
+done

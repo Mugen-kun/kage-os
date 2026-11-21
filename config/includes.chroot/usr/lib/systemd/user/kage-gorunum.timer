@@ -1,0 +1,7 @@
+[Unit]
+Description=Schedule Kage automatic light and dark themes
+
+[Timer]
+OnCalendar=*-*-* 07:00:00
+OnCalendar=*-*-* 19:00:00
+AccuracySec=1min

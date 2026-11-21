@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Kage Merkez
+Comment=Günlük kullanım, paketler, güç, sürücüler ve sistem ayarları
+Exec=kage-merkez
+Icon=kage
+Categories=System;
+Keywords=Kage;Sistem;Güncellemeler;Tanılama;Donanım;
+StartupNotify=true

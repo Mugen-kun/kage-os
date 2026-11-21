@@ -1,0 +1,10 @@
+Origin: Kage OS
+Label: Kage Toolbox
+Suite: trixie
+Codename: trixie
+Architectures: amd64
+Components: main
+Date: Fri, 20 Nov 2026 00:19:10 GMT
+SHA256:
+ 195e980b23e1311820395607bc6827149d5f3053a60df0f0c5a469f9ca25dd32            2383 main/binary-amd64/Packages
+ 6c8972a1335ec9b7706459a9e012d9473182b68d5a5c80c34c9869c03b234f8d             879 main/binary-amd64/Packages.gz

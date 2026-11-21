@@ -1,0 +1,17 @@
+{
+  "policies": {
+    "Homepage": {
+      "URL": "file:///usr/share/kage/baslangic.html",
+      "StartPage": "homepage",
+      "Locked": false
+    },
+    "OverrideFirstRunPage": "",
+    "OverridePostUpdatePage": "",
+    "ExtensionSettings": {
+      "uBlock0@raymondhill.net": {
+        "installation_mode": "normal_installed",
+        "install_url": "file:///usr/share/kage/firefox/ublock-origin.xpi"
+      }
+    }
+  }
+}

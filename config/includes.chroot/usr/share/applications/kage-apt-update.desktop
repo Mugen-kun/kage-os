@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Refresh Package Lists
+Name[tr]=Paket Listelerini Yenile
+Comment=Download package indexes from the Debian repositories
+Comment[tr]=Debian depolarından güncel paket listelerini indir
+Exec=xfce4-terminal --hold --execute kage-paket-yenile
+Icon=system-software-update
+Terminal=false
+Categories=Settings;PackageManager;

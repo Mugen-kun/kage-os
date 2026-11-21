@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Kage User Guide
+Name[tr]=Kage Kullanım Kılavuzu
+Comment=Read about live sessions, package installation, and reports
+Comment[tr]=Canlı oturum, paket kurma ve inceleme raporları hakkında bilgi
+Exec=mousepad /usr/share/kage/Kage-Kullanim.txt
+Icon=help-browser
+Terminal=false
+Categories=Utility;
+StartupNotify=true

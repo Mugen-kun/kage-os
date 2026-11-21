@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Dosya Kurtarma
+Comment=Klasörleri kopyala ve kopyaların özetini doğrula
+Exec=kage-merkez --dosya-kurtarma
+Icon=document-revert
+Categories=Utility;X-KageDaily;
+Keywords=Yedek;Kurtarma;Kopya;
+StartupNotify=true

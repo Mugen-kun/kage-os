@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Telefon Paylaşımı
+Comment=Yerel ağda QR koduyla dosya gönder ve al
+Exec=kage-merkez --telefon-paylasimi
+Icon=folder-publicshare
+Categories=Utility;X-KageDaily;
+Keywords=QR;Telefon;Dosya;Wi-Fi;
+StartupNotify=true

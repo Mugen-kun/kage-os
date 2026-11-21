@@ -1,0 +1,2 @@
+Kage OS çevrimdışı doğrulama örneği
+Bu belgenin SHA-256 özeti ornek-belge.sha256 dosyasındadır.

@@ -1,0 +1,15 @@
+# The wizard stores a whitelisted locale for the next Xfce login.
+if [ -r "${XDG_CONFIG_HOME:-$HOME/.config}/kage-os/tercihler.json" ]; then
+    kage_language=$(/usr/bin/python3 /usr/share/kage/tercihler.py --locale)
+    case "$kage_language" in
+        tr_TR.UTF-8) LANG=$kage_language LANGUAGE=tr ;;
+        en_US.UTF-8) LANG=$kage_language LANGUAGE=en_US:en ;;
+    esac
+    case "$kage_language" in
+        tr_TR.UTF-8|en_US.UTF-8)
+            export LANG LANGUAGE
+            unset LC_ALL LC_MESSAGES
+            ;;
+    esac
+    unset kage_language
+fi

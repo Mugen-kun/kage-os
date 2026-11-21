@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Kage İlk Açılış
+Comment=Oturum dili, klavye, görünüm ve uygulama seçimleri
+Exec=kage-merkez --ilk-kurulum
+Icon=preferences-desktop
+Categories=System;X-KageManagement;
+Keywords=Dil;Klavye;Tema;İlk açılış;
+StartupNotify=true

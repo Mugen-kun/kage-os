@@ -1,0 +1,20 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Origin: Kage OS
+Label: Kage Toolbox
+Suite: trixie
+Codename: trixie
+Architectures: amd64
+Components: main
+Date: Fri, 20 Nov 2026 00:19:10 GMT
+SHA256:
+ 195e980b23e1311820395607bc6827149d5f3053a60df0f0c5a469f9ca25dd32            2383 main/binary-amd64/Packages
+ 6c8972a1335ec9b7706459a9e012d9473182b68d5a5c80c34c9869c03b234f8d             879 main/binary-amd64/Packages.gz
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYIAB0WIQTEG2nfCnVUsPsnEb0vdwlze0QOxAUCav+R/gAKCRAvdwlze0QO
+xK3lAP4r6njZgnSFdNxK3kZmGOfEeeV9rkpof4s5yAeSgH9n1QEA/hFsKG3KfvC0
+/xvtd3em4/XFhgYuK9nWxSC8Ytzp1gI=
+=R7rO
+-----END PGP SIGNATURE-----

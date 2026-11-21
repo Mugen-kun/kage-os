@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=USB Kalıcılığı
+Comment=Boş USB bölümünü Kage ev dizini için hazırla
+Exec=kage-merkez --usb-kalicilik
+Icon=drive-removable-media
+Categories=System;X-KageManagement;
+Keywords=LUKS;USB;Şifreleme;Kalıcılık;
+StartupNotify=true

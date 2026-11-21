@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Disk Images and Files
+Name[tr]=Disk İmajları ve Dosyalar
+Comment=Hash files, check disk image partitions or apply a YARA rule
+Comment[tr]=Dosya özeti al, disk imajının bölümlerini incele veya YARA kuralı uygula
+Exec=kage-inceleme dijital
+Icon=drive-harddisk
+Terminal=false
+Categories=Utility;X-KageForensics;
+StartupNotify=true

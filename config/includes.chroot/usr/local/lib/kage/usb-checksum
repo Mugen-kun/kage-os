@@ -1,0 +1,16 @@
+#!/usr/bin/python3 -I
+"""Return only a SHA-256 digest of the requested prefix of a removable disk."""
+
+import subprocess
+import sys
+
+sys.path.insert(0, "/usr/share/kage")
+from bakim import compare_usb
+
+if len(sys.argv) != 4:
+    sys.exit(2)
+try:
+    print(compare_usb(sys.argv[1], sys.argv[2], int(sys.argv[3])))
+except (OSError, ValueError, subprocess.SubprocessError) as error:
+    print(error, file=sys.stderr)
+    sys.exit(1)

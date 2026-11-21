@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Güvenlik Duvarı Durumu
+Comment=Yerel nftables zincirlerini ve etkin kural sayılarını oku
+Exec=kage-merkez --guvenlik-duvari
+Icon=security-high
+Categories=System;
+Keywords=Firewall;nftables;Güvenlik;Kural;
+StartupNotify=true

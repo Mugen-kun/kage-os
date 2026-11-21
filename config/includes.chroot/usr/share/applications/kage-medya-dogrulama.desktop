@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=ISO ve USB Doğrulama
+Comment=ISO dosyasının ve yazılmış USB’nin SHA-256 bütünlüğünü doğrula
+Exec=kage-merkez --medya-dogrulama
+Icon=drive-removable-media-usb
+Categories=System;
+Keywords=ISO;USB;SHA-256;Bütünlük;
+StartupNotify=true

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Dosya Atölyesi
+Comment=PDF’den sayfa ayır ve fotoğraf veya video dönüştür
+Exec=kage-merkez --dosya-atolyesi
+Icon=document-save-as
+Categories=Utility;X-KageDaily;
+Keywords=PDF;Fotoğraf;Video;MP4;
+StartupNotify=true

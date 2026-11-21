@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Kage Görünümü
+Comment=Açık, koyu ve saate göre değişen görünüm
+Exec=kage-merkez --kage-gorunum
+Icon=preferences-desktop-theme
+Categories=Utility;X-KageDaily;
+Keywords=Tema;Duvar kâğıdı;Görünüm;
+StartupNotify=true

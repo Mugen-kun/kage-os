@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Sistem Günlükleri
+Comment=Bu açılışın sistem kayıtlarını ara ve önem düzeyine göre filtrele
+Exec=kage-merkez --gunlukler
+Icon=utilities-log-viewer
+Categories=System;
+Keywords=Journal;Günlük;Sistem;Hata;
+StartupNotify=true

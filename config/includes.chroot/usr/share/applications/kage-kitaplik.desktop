@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Çevrimdışı Kitaplık
+Comment=Mini sözlükte ve yerel kitaplarda arama yap
+Exec=kage-merkez --kitaplik
+Icon=accessories-dictionary
+Categories=Utility;X-KageDaily;
+Keywords=Sözlük;Kitap;EPUB;PDF;
+StartupNotify=true

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Kage Araç Arama
+Comment=Uygulamaları ve terminal komutlarının kılavuzlarını ara
+Exec=kage-merkez --araclar
+Icon=system-search
+Categories=Utility;
+Keywords=Arama;Komut;Uygulama;Kılavuz;
+StartupNotify=true

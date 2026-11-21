@@ -1,0 +1,36 @@
+#!/usr/bin/python3 -I
+"""List or restore an installed system checkpoint from a Kage live USB."""
+
+import argparse
+import os
+import subprocess
+import sys
+
+sys.path.insert(0, "/usr/share/kage")
+from sistem_kurtarma import offline_points, restore_offline
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("islem", choices=("listele", "geri-al"))
+    parser.add_argument("bolum")
+    parser.add_argument("nokta", nargs="?")
+    parser.add_argument("--onayla", action="store_true", help="Seçilen noktayı etkin @ kökü olarak aç")
+    args = parser.parse_args()
+    if os.geteuid() != 0:
+        parser.error("Bu işlemi sudo ile çalıştır.")
+    try:
+        if args.islem == "listele" and not args.nokta:
+            print("\n".join(offline_points(args.bolum)))
+        elif args.islem == "geri-al" and args.nokta and args.onayla:
+            old_root = restore_offline(args.bolum, args.nokta)
+            print(f"Sistem noktası etkin. Önceki kök {old_root} konumunda.")
+        else:
+            parser.error("Geri alma için bölümü, nokta kimliğini ve --onayla seçeneğini belirt.")
+    except (OSError, ValueError, subprocess.SubprocessError) as error:
+        print(error, file=sys.stderr)
+        return 1
+    return 0
+
+
+raise SystemExit(main())

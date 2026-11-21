@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=CTF Çalışma Alanı
+Comment=Vaka notlarını, terminal profilini ve bağlantıları düzenle
+Exec=kage-merkez --ctf
+Icon=folder-documents
+Categories=System;X-KageManagement;
+Keywords=CTF;Vaka;Not;Terminal;Laboratuvar;
+StartupNotify=true

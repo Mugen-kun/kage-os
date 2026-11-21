@@ -1,0 +1,6 @@
+Types: deb
+URIs: file:/usr/share/kage/toolbox-apt
+Suites: trixie
+Components: main
+Architectures: amd64
+Signed-By: /usr/share/kage/toolbox-apt/kage-toolbox.gpg

@@ -1,0 +1,69 @@
+Package: kage-tools-network
+Version: 0.7.0
+Architecture: all
+Section: metapackages
+Priority: optional
+Installed-Size: 1
+Maintainer: Kage OS <kage-os@localhost>
+Depends: wireshark, tshark, bind9-dnsutils, ethtool
+Description: Ağ analizi için Kage OS araçları
+ Kaydedilmiş ağ trafiğini incele ve bağlantı durumunu denetle.
+Filename: pool/main/k/kage-toolbox/kage-tools-network_0.7.0_all.deb
+Size: 812
+SHA256: 0f0244cd8df2187eae1d7ca718ee53267f6d26f70a42fc23b5cd41089ce86843
+
+Package: kage-tools-forensics
+Version: 0.7.0
+Architecture: all
+Section: metapackages
+Priority: optional
+Installed-Size: 1
+Maintainer: Kage OS <kage-os@localhost>
+Depends: sleuthkit, ewf-tools, libimage-exiftool-perl, gddrescue
+Description: Dijital inceleme için Kage OS araçları
+ Disk imajlarını, dosya bütünlüğünü ve meta verileri incele.
+Filename: pool/main/k/kage-toolbox/kage-tools-forensics_0.7.0_all.deb
+Size: 824
+SHA256: 10f979d313f60756916c8f038b076b3504da87b009ecd0aeb30aeaaaabe0cc6e
+
+Package: kage-tools-office
+Version: 0.7.0
+Architecture: all
+Section: metapackages
+Priority: optional
+Installed-Size: 1
+Maintainer: Kage OS <kage-os@localhost>
+Depends: libreoffice-writer, libreoffice-calc, libreoffice-l10n-tr
+Description: Ofis için Kage OS araçları
+ Writer ve Calc ile belge ve hesap tablosu düzenle.
+Filename: pool/main/k/kage-toolbox/kage-tools-office_0.7.0_all.deb
+Size: 796
+SHA256: fda6d8bebd67c617e8c18c4eaea477bcc4f033d0af650bc88db5c1814f41215e
+
+Package: kage-tools-media
+Version: 0.7.0
+Architecture: all
+Section: metapackages
+Priority: optional
+Installed-Size: 1
+Maintainer: Kage OS <kage-os@localhost>
+Depends: mpv, ffmpeg
+Description: Medya için Kage OS araçları
+ Salon ekranı için mpv ve telefon videosu hazırlamak için FFmpeg.
+Filename: pool/main/k/kage-toolbox/kage-tools-media_0.7.0_all.deb
+Size: 788
+SHA256: 580b47d6d4cfb8ef9a577dd34fa7957f2afb4b2e2b2b6c191adf920d9e4b5de8
+
+Package: kage-hack-tool
+Version: 0.7.0
+Architecture: all
+Section: metapackages
+Priority: optional
+Installed-Size: 1
+Maintainer: Kage OS <kage-os@localhost>
+Depends: kage-tools-network, kage-tools-forensics
+Description: Kage inceleme araçları için Kage OS araçları
+ Ağ analizi ve dijital inceleme paketlerini bir araya getirir.
+Filename: pool/main/k/kage-toolbox/kage-hack-tool_0.7.0_all.deb
+Size: 796
+SHA256: 1146b0e750145169c10f95465cd5fb20098c5dbbadb08efa813a91a82721fb6f

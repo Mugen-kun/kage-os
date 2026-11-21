@@ -1,0 +1,5 @@
+button-title=Kage OS
+button-icon=kage
+show-button-title=true
+show-button-icon=true
+favorites=kage-araclar.desktop,kage-merkez.desktop,kage-ag.desktop,kage-dijital.desktop,org.wireshark.Wireshark.desktop,synaptic.desktop,xfce4-terminal-emulator.desktop,kage-yardim.desktop

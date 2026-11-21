@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Kage Analysis
+Name[tr]=Kage İnceleme
+Comment=Analyze network captures and disk images
+Comment[tr]=Ağ kayıtlarını ve disk imajlarını incele
+Exec=kage-inceleme
+Icon=system-search
+Terminal=false
+Categories=Utility;
+StartupNotify=true

@@ -1,0 +1,5 @@
+{"__REALTIME_TIMESTAMP":"1760000000000000","_SYSTEMD_UNIT":"systemd-journald.service","PRIORITY":"6","MESSAGE":"Örnek oturum günlüğü açıldı."}
+{"__REALTIME_TIMESTAMP":"1760000004000000","_SYSTEMD_UNIT":"NetworkManager.service","PRIORITY":"6","MESSAGE":"Örnek kablolu ağ aygıtı algılandı."}
+{"__REALTIME_TIMESTAMP":"1760000008000000","_SYSTEMD_UNIT":"NetworkManager.service","PRIORITY":"4","MESSAGE":"Örnek bağlantı DHCP adresi bekliyor."}
+{"__REALTIME_TIMESTAMP":"1760000012000000","_SYSTEMD_UNIT":"kage-ornek.service","PRIORITY":"3","MESSAGE":"Örnek aygıt için firmware dosyası bulunamadı."}
+{"__REALTIME_TIMESTAMP":"1760000016000000","_SYSTEMD_UNIT":"NetworkManager.service","PRIORITY":"6","MESSAGE":"Örnek bağlantı TEST-NET adresi 192.0.2.10 ile etkin."}

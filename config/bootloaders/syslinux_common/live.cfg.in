@@ -1,0 +1,24 @@
+label live-@FLAVOUR@
+	menu label ^Kage OS'u baslat
+	menu default
+	linux @LINUX@
+	initrd @INITRD@
+	append @APPEND_LIVE@
+
+label live-@FLAVOUR@-persistence
+	menu label Kalici ev diziniyle baslat
+	linux @LINUX@
+	initrd @INITRD@
+	append @APPEND_LIVE@ persistence persistence-label=kage-persistence
+
+label live-@FLAVOUR@-encrypted
+	menu label Sifreli ev diziniyle baslat
+	linux @LINUX@
+	initrd @INITRD@
+	append @APPEND_LIVE@ persistence persistence-encryption=lukslabel persistence-media=removable-usb persistence-label=kage-persistence
+
+label live-@FLAVOUR@-failsafe
+	menu label Uyumluluk modu
+	linux @LINUX@
+	initrd @INITRD@
+	append @APPEND_LIVE_FAILSAFE@

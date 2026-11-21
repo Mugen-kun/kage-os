@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Kage Vakalar
+Comment=Ağ kaydı, disk imajı ve raporları bir vaka altında topla
+Exec=kage-merkez --vakalar
+Icon=folder-documents
+Categories=Utility;X-KageForensics;
+Keywords=Vaka;Rapor;İnceleme;SHA-256;
+StartupNotify=true

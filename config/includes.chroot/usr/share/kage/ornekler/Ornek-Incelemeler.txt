@@ -1,0 +1,27 @@
+Kage çevrimdışı örnek incelemeleri
+
+Wireshark
+
+Wireshark’ta Dosya → Aç ile /usr/share/kage/ornekler/ornek-dns.pcap
+dosyasını aç. Görüntüleme filtresine dns yaz. İlk paket kage.example.test
+için bir A kaydı sorguluyor. İkinci paket 203.0.113.5 adresini döndürüyor.
+Bu kayıt, örnek adreslerle oluşturulmuş iki DNS paketinden oluşur.
+
+Sistem günlükleri
+
+Kage Merkez → Sistem araçları → Sistem günlükleri bölümüne git.
+Örnek kayıtlar düğmesine tıkla. Uyarılar ve hatalar filtresini seç,
+ardından NetworkManager veya firmware kelimesiyle ara.
+Bir satır seçtiğinde iletinin tamamı altta görünür.
+
+SHA-256 doğrulaması
+
+Kage İnceleme → Dijital inceleme → SHA-256 bölümünde
+/usr/share/kage/ornekler/ornek-belge.txt dosyasını seç.
+Yanındaki ornek-belge.sha256 dosyasından beklenen özeti yapıştır
+ve Özeti hesapla düğmesine bas. Eşleşmeyi sonuç ekranında görürsün.
+
+Terminalden aynı denetimi yapabilirsin.
+
+cd /usr/share/kage/ornekler
+sha256sum -c ornek-belge.sha256

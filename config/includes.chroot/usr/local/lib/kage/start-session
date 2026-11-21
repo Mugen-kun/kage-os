@@ -1,0 +1,22 @@
+#!/bin/sh
+state="${XDG_STATE_HOME:-$HOME/.local/state}/kage-os"
+shortcuts=xfce4-keyboard-shortcuts
+key='<Primary><Alt>a'
+if [ ! -f "$state/arac-kisayolu" ] && xfconf-query -c "$shortcuts" -l >/dev/null 2>&1; then
+    if xfconf-query -c "$shortcuts" -p "/commands/custom/$key" >/dev/null 2>&1 ||
+       xfconf-query -c "$shortcuts" -p "/commands/default/$key" >/dev/null 2>&1 ||
+       xfconf-query -c "$shortcuts" -p "/xfwm4/custom/$key" >/dev/null 2>&1 ||
+       xfconf-query -c "$shortcuts" -p "/xfwm4/default/$key" >/dev/null 2>&1 ||
+       xfconf-query -c "$shortcuts" -p "/commands/custom/$key" -n -t string -s 'kage-merkez --araclar'; then
+        umask 077
+        mkdir -p "$state" && touch "$state/arac-kisayolu"
+    fi
+fi
+if [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/kage-os/gorunum" ]; then
+    /usr/bin/python3 /usr/share/kage/masaustu.py --oturum-acilisi &
+fi
+if [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/kage-os/guc-profili" ]; then
+    /usr/bin/python3 /usr/share/kage/aygitlar.py &
+fi
+[ ! -f "$state/ilk-acilis-0.7" ] || exit 0
+exec kage-merkez --ilk-acilis

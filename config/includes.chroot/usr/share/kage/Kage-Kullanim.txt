@@ -1,0 +1,160 @@
+Kage OS 0.8.0
+Debian 13 · Türkçe Xfce canlı oturumu
+
+Kage Merkez
+
+Başlangıç ekranı oturum türünü, açılış biçimini, çekirdeği, belleği ve
+ev dizininin boş alanını gösterir. Alt paneldeki kuzgun simgesi merkezi
+yeniden açar. Görünüm ve ağ bağlantıları buradan ayarlanabilir.
+
+Başlangıç kartları
+
+İlk açılış sihirbazında oturum dili, klavye, tema, uygulama paketleri
+ve sürücü yardımcısını seç. Dil seçimi bir sonraki oturumda uygulanır.
+Güç ekranında cihazın desteklediği profiller görünür. GPU ve sürücüler
+sayfasından bağlı sürücüyü gör, bir uygulamayı seçilen GPU ile aç veya
+OpenGL işleyicisini dene. NVIDIA kurulumu kurulu Kage’de uygulanır.
+
+Kage Toolbox’ta ağ analizi, dijital inceleme, ofis ve medya paketlerini
+seçebilirsin. Aynı gruplar imzalı yerel APT deposunda vardır. Ağ analizi
+ve dijital inceleme için sudo apt install kage-hack-tool kullan.
+
+Seçimi hatırla, Toolbox kategorilerini ev dizinine kaydeder. Sonraki
+canlı oturumda Seçilen eksikleri kur düğmesini kullan. JSON olarak
+dışa aktardığın profili başka bir Kage oturumuna taşıyabilirsin.
+
+Güncellemeler veya Toolbox içindeki Paket sorun giderme ekranı APT
+kilidini, boş alanı, saati ve paket listelerini gösterir. Yerel denetimde
+bir paket adı girerek kurulumu önizle. DNS ve HTTPS bağlantı denetimini
+Debian bağlantısını sına düğmesiyle başlat.
+
+Kurtarma noktalarında tema, klavye, güç ve Kage tercihlerin kaydedilir.
+Seçilen noktaya dönmeden önce mevcut ayarlar yeni bir noktaya yazılır.
+Dosya yedekleme ayrı düğmeyle açılır. Kurulu Btrfs kökü için sistem
+noktası @ ve @home düzeninde çalışır. Geri alma komutunun ayrıntıları
+kaynak arşivindeki README dosyasındadır.
+
+Tanılama bölümünde sistem hizmetlerini inceleyebilir ve metin raporu
+kaydedebilirsin. Rapora IP adresleri, ağ adları ve aygıt kimlikleri yazılmaz.
+
+Günlük kullanım
+
+Ders düzeni PDF ile ~/Kage-Notlar/ders.txt dosyasını yan yana açar.
+Sunumda bildirimleri sustur, ikinci ekranı seç ve bittiğinde Bitir’e bas.
+Salon ekranından mpv paketiyle tam ekran film veya müzik oynat.
+
+Dosya atölyesinde PDF sayfa aralığı, JPEG ve PNG boyutu veya MP4
+dönüştürme seç. Dosyaları sürükle ve çıktı klasörünü belirt. MP4
+dönüştürme için ffmpeg paketi gerekir.
+
+Telefon paylaşımı için iki cihazı aynı yerel ağa bağla. Ağ adresini
+seç, QR paylaşımını başlat ve kodu telefonun kamerasıyla okut.
+Gelen dosyalar ~/Kage-Paylasim altına kaydedilir. Oturum 10 dakika
+açık kalır ve gelen bir dosya 128 MiB’ye kadar olabilir.
+
+Çevrimdışı kitaplık mini İngilizce–Türkçe sözlüğü ve Kage kılavuzunu
+tarar. Kaynak ekle ile kendi TXT, Markdown, PDF ve EPUB dosyalarını
+~/Kage-Kitaplik altına ekle. Sonuca çift tıklayarak kaynağı aç.
+
+Dosya kurtarmada kaynak klasörü ve başka bir hedef klasörü seç.
+Gereken alanı hesapla, ardından Kopyala ve doğrula düğmesine bas.
+Kopyalar hedefte yeni bir klasöre kaydedilir ve SHA-256 ile doğrulanır.
+
+Görünümde açık, koyu veya otomatik temayı seç. Otomatik tema yerel
+saatle 07.00’de açık ve 19.00’da koyu görünüme geçer.
+
+Araç arama
+
+Ctrl+Alt+A ile Araçlar sayfasını aç. Uygulamanın adını veya komutu yaz.
+Kategori seçimi listeyi daraltır. Uygulama kartındaki Aç ile programı,
+Kılavuz ile kullanım bilgisini aç. Yeni bir uygulama kurduktan sonra
+Yenile düğmesiyle kartları güncelle.
+
+Terminalde ifconfig, iwconfig, iw, reboot, ip, ss, netstat, dig,
+traceroute, lsusb, lspci, htop ve tree hazırdır. ifconfig -a ağ
+arayüzlerini, iw dev kablosuz arayüzleri gösterir. Açık işlerini
+kaydettikten sonra yeniden başlatmak için reboot kullan.
+
+Bash ve Zsh, OpenSSH istemcisi, Git, rsync, tmux, Python sanal
+ortamları ve C/C++ derleme araçları terminalde bulunur.
+kage-terminal-kontrol temel komutları denetler. Belirli komutları
+denetlemek için adlarını bu komutun ardına yaz.
+Bash ve Zsh bulunamayan komut için çevrimdışı Debian paket dizinine
+bakar. Gösterilen paketi kurmak için sudo apt install PAKET kullan.
+
+Sistem araçları
+
+Güvenlik duvarı ekranı nftables zincirlerini ve kurallarını okur.
+ISO ve USB ekranında ISO dosyasını seç. İstersen SHA-256 değeri gir
+veya yazılmış USB’yi seç. USB doğrulaması medyada yalnızca okuma yapar.
+Günlükler ekranı bu açılışın son 300 kaydını hizmet adı, ileti ve
+önem düzeyine göre filtreler.
+Donanım ekranı ağ, Wi-Fi, ekran ve ses aygıtlarını ve sürücülerini
+gösterir. Bu açılışta eksik ürün yazılımı bildiren kayıtları listeler.
+
+Paketler
+
+Kage Merkez’de Güncellemeler > Debian depolarını yenile seçeneğini kullan.
+Yenileme sonucunu APT ayrıntıları düğmesiyle açabilirsin. Kurulum ve
+yükseltme için Synaptic’i aç veya uçbirimde sudo apt install komutunu
+kullan. Nmap imajla birlikte gelir. Sürümünü nmap --version ile görebilir,
+kılavuzunu Kage OS > Ağ Analizi altında açabilirsin.
+Yalnızca Debian güvenlik düzeltmelerini içeren paketleri görmek için
+Güvenlik güncellemeleri görünümünü seç.
+
+APT kilit hatası gösterirse Synaptic’te veya başka bir uçbirimde çalışan
+paket işleminin bitmesini bekle. Paket indirmek için ağ bağlantısı gerekir.
+
+Firefox ESR, uBlock Origin reklam engelleyicisiyle gelir. Eklentiye
+Firefox’un Eklentiler ve temalar menüsünden ulaşabilirsin.
+
+İnceleme
+
+Kage İnceleme, kaydedilmiş ağ trafiğinden veya yerel dosyalardan rapor
+üretir. Dosya bütünlüğünü doğrulamak için Dijital inceleme > SHA-256 altında
+dosyayı seç ve beklenen SHA-256 değerini yapıştır. Bir .sha256 dosyasından
+özet satırının tamamını da yapıştırabilirsin.
+
+Bir inceleme sürerken Durdur’a basarsan işlem iptal edilir. Rapor klasörü
+işlemin durumunu içerir. Tamamlanan raporu doğrudan Raporu aç ile görebilirsin.
+
+Kage Merkez > Vakalar bölümünde bir vaka oluştur. Dosya kaydet, seçilen
+dosyanın konumunu, boyutunu, SHA-256 değerini ve UTC zamanını kaydeder.
+Dosya mevcut konumunda kalır. Vakada incele, raporu vakanın
+~/Kage-Vakalar altındaki raporlar klasörüne yönlendirir.
+CTF alanı aynı vakada notlarını, kendi laboratuvar bağlantılarını ve
+Bash veya Zsh terminal tercihini saklar. Terminal vaka klasöründe açılır.
+
+Zaman çizelgesi aynı vakadaki ağ paketlerini, JSONL günlüklerini, dosya
+zamanlarını ve notları UTC ile sıralar. Tür veya metin seçerek daralt.
+CSV kaydet, yalnızca ekranda filtrelenen olayları kaydeder.
+
+Dijital İnceleme > Örnek İncelemeler ile çevrimdışı kılavuzu aç.
+DNS kaydı, bir belge ve özeti, örnek günlük dosyası ve beklenen sonuçlar
+/usr/share/kage/ornekler dizinindedir. Örnek günlüğü Sistem araçları >
+Sistem günlükleri > Örnek kayıtlar yolundan açabilirsin.
+
+Canlı oturum
+
+Canlı kullanıcı adı kage, başlangıç parolası live. Oturumda passwd komutuyla
+parolanı değiştirebilirsin. Raporlarını saklamak için uygulamada harici bir
+konum seç veya oturumu kapatmadan önce dışarı kopyala. Varsayılan rapor
+dizini ~/Kage-Raporlar’dır.
+
+Yönetim > USB kalıcılığı bölümünde çıkarılabilir USB’deki bağlı olmayan
+boş bölümü seç. LUKS2 veya düz ext4 tercihini belirle. Bölümü hazırla
+düğmesi biçimlendirmeden önce seçili aygıtı gösterir. Sonraki açılışta
+eşleşen kalıcılık seçeneğini kullan ve oturum durumunu bu ekranda doğrula.
+
+Kalıcı ev dizini seçeneği için kage-persistence etiketli ayrı bir ext4
+dosya sistemi hazırla. Köküne tek satırı /home olan persistence.conf
+dosyasını koy. Açılış menüsünde Kalici ev diziniyle baslat seçeneğini
+seç ve Kage Merkez’de ev dizininin kalıcı depolamada olduğunu kontrol et.
+Bu mod ev dizinine yazılan dosyaları ve ayarları korur. Canlı oturum
+kapanınca paket kurulumları ve sistem dosyalarındaki değişiklikler sıfırlanır.
+
+Şifreli USB için dış etiketi persistence olan bir LUKS2 kapsayıcısı
+hazırla. İçindeki ext4 dosya sistemine kage-persistence etiketini ver.
+Aynı persistence.conf dosyasını içteki dosya sisteminin köküne koy.
+Açılışta Sifreli ev diziniyle baslat seçeneğini seç ve LUKS parolasını
+gir. Merkez’in oturum satırında şifreli kalıcı depolamayı doğrula.

@@ -1,0 +1,20 @@
+desktop-image: "../splash.png"
+desktop-color: "#151014"
+title-text: ""
+title-color: "#fff0d8"
+title-font: "DejaVu Sans Bold 18"
+message-color: "#fff0d8"
+message-bg-color: "#35212a"
+terminal-font: "DejaVu Sans Mono 12"
++ boot_menu {
+    left = 17%
+    top = 46%
+    width = 68%
+    height = 37%
+    item_font = "DejaVu Sans 14"
+    item_color = "#e9ccbf"
+    selected_item_color = "#ffffff"
+    item_height = 32
+    item_padding = 7
+    item_spacing = 4
+}

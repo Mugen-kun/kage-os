@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="dark">
+  <title>Kage OS · Başlangıç</title>
+  <link rel="icon" type="image/png" href="kuzgun.png">
+  <link rel="stylesheet" href="baslangic.css">
+</head>
+<body>
+  <header class="topbar shell">
+    <a class="brand" href="#baslangic">
+      <img src="kuzgun.png" width="36" height="36" alt="">
+      <span>Kage OS</span>
+    </a>
+    <a class="docs" href="https://www.debian.org/doc/">Debian belgeleri <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="baslangic" class="shell">
+    <section class="hero" aria-labelledby="baslik">
+      <div class="hero-copy">
+        <h1 id="baslik">Başlangıç<span aria-hidden="true">.</span></h1>
+        <form class="search" role="search" action="https://duckduckgo.com/" method="get">
+          <label class="visually-hidden" for="aranan">DuckDuckGo’da ara</label>
+          <span class="search-icon" aria-hidden="true"></span>
+          <input id="aranan" name="q" type="search" placeholder="DuckDuckGo’da ara" enterkeyhint="search" required>
+          <button type="submit">Ara <span aria-hidden="true">→</span></button>
+        </form>
+      </div>
+      <div class="hero-art">
+        <img src="kuzgun.png" width="650" height="650" alt="Kage OS kuzgun amblemi">
+      </div>
+    </section>
+
+    <nav class="shortcuts" aria-label="Başlangıç kısayolları">
+      <a class="card" href="Kage-Kullanim.txt">
+        <span class="card-icon book" aria-hidden="true">▤</span>
+        <span class="card-text"><strong>Kage kılavuzu</strong><small>Canlı oturum, ayarlar ve araçlar</small></span>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="card" href="#terminal">
+        <span class="card-icon console" aria-hidden="true">&gt;_</span>
+        <span class="card-text"><strong>Terminal</strong><small>Komut denetimi ve araç arama</small></span>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="card" href="https://support.mozilla.org/tr/products/firefox">
+        <span class="card-icon help" aria-hidden="true">?</span>
+        <span class="card-text"><strong>Firefox yardımı</strong><small>Tarayıcı ayarları ve eklentiler</small></span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+    </nav>
+
+    <section class="terminal" id="terminal" aria-labelledby="terminal-baslik">
+      <div>
+        <h2 id="terminal-baslik">Terminal kısayolları</h2>
+        <p><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd> ile Kage’nin araç aramasını aç.</p>
+      </div>
+      <div class="command">
+        <p>Temel terminal komutlarını denetle</p>
+        <code>kage-terminal-kontrol</code>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

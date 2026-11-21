@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Kage Toolbox
+Comment=Ağ analizi, dijital inceleme, ofis ve medya paketleri
+Exec=kage-merkez --toolbox
+Icon=system-software-install
+Categories=System;X-KageManagement;
+Keywords=Toolbox;APT;Paket;Ofis;Medya;
+StartupNotify=true

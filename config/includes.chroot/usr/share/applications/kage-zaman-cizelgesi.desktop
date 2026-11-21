@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Vaka Zaman Çizelgesi
+Comment=Vaka notlarını ve yerel ağ veya sistem kayıtlarını zaman sırasına koy
+Exec=kage-merkez --zaman-cizelgesi
+Icon=appointment-new
+Categories=Utility;X-KageForensics;
+Keywords=Vaka;Olay;UTC;PCAP;Günlük;CSV;
+StartupNotify=true
